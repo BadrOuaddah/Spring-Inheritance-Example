@@ -1,4 +1,7 @@
 package com.example.parent.classes;
 
-public class Father {
+import jakarta.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class Father extends Human{
 }

@@ -1,4 +1,7 @@
 package com.example.parent.classes;
 
-public class SecondSon {
+import jakarta.persistence.Entity;
+
+@Entity
+public class SecondSon extends Father{
 }

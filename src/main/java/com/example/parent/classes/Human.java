@@ -1,5 +1,6 @@
 package com.example.parent.classes;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Human {
+    @Id
+    private long humanId;
     private String name;
     private int age;
     private String gender;
