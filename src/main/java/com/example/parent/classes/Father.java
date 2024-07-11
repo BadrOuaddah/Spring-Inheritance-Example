@@ -7,4 +7,8 @@ import jakarta.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Father extends Human{
+    private String academicLevel;
+    private String job;
+    private double salary;
+
 }
