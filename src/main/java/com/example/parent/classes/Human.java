@@ -1,6 +1,7 @@
 package com.example.parent.classes;
 
 import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@MappedSuperclass
 public class Human {
     @Id
     private long humanId;
