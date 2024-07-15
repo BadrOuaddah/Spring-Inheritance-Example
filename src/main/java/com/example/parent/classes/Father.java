@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Father extends Human {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long fatherId;
+    private Long fatherId;
     private String academicLevel;
     private String job;
     private double salary;

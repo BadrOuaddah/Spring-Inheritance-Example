@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @MappedSuperclass
 public class Human {
     @Id
-    private long humanId;
+    private Long humanId;
     private String name;
     private int age;
     private String gender;

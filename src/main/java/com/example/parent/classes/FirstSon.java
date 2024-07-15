@@ -7,5 +7,5 @@ import jakarta.persistence.*;
 public class FirstSon extends Father {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long firstSonId;
+    private Long firstSonId;
 }
