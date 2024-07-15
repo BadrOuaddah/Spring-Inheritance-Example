@@ -1,12 +1,13 @@
 package com.example.parent.classes;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
+import jakarta.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Father extends Human{
+public class Father extends Human {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long fatherId;
     private String academicLevel;
     private String job;
     private double salary;

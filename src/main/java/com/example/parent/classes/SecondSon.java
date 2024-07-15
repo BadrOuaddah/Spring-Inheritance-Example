@@ -1,9 +1,11 @@
 package com.example.parent.classes;
 
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
 @Entity
 @DiscriminatorValue("2")
-public class SecondSon extends Father{
+public class SecondSon extends Father {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long secondSonId;
 }
