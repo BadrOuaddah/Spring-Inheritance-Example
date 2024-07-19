@@ -1,9 +1,9 @@
-package com.example.parent.classes;
+package com.example.parent.types.single_table.entity;
 
 import jakarta.persistence.*;
 
 @Entity
-@DiscriminatorValue("1")
+@DiscriminatorValue("FirstSon")
 public class FirstSon extends Father {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

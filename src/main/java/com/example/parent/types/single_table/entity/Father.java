@@ -1,9 +1,10 @@
-package com.example.parent.classes;
+package com.example.parent.types.single_table.entity;
 
 import jakarta.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "father", discriminatorType = DiscriminatorType.STRING)
 public class Father extends Human {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

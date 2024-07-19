@@ -1,6 +1,6 @@
-package com.example.parent.repository;
+package com.example.parent.types.single_table.repository;
 
-import com.example.parent.classes.SecondSon;
+import com.example.parent.types.single_table.entity.SecondSon;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

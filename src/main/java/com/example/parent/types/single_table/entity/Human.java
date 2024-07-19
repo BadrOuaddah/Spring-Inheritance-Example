@@ -1,4 +1,4 @@
-package com.example.parent.classes;
+package com.example.parent.types.single_table.entity;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
