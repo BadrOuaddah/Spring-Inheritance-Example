@@ -1,6 +1,6 @@
-package com.example.parent.types.table_per_class.repository;
+package com.example.parent.types.tablePerClass.repository;
 
-import com.example.parent.types.table_per_class.entity.FatherTPC;
+import com.example.parent.types.tablePerClass.entity.FatherTPC;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
