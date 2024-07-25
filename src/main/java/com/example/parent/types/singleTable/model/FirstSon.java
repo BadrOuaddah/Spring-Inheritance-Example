@@ -1,11 +1,13 @@
 package com.example.parent.types.singleTable.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
 @DiscriminatorValue("FirstSon")
+@AllArgsConstructor
+@NoArgsConstructor
 public class FirstSon extends Father {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long firstSonId;
+    private String fullName;
 }
