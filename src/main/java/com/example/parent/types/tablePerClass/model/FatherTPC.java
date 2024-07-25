@@ -1,4 +1,4 @@
-package com.example.parent.types.tablePerClass.entity;
+package com.example.parent.types.tablePerClass.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

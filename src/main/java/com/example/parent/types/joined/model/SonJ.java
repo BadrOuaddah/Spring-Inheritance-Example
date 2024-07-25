@@ -1,4 +1,4 @@
-package com.example.parent.types.joined.entity;
+package com.example.parent.types.joined.model;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
