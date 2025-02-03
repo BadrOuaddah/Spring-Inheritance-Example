@@ -14,5 +14,18 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-container
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD:
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
 volumes:
   mysql_data:
