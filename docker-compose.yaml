@@ -7,8 +7,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootPass
       MYSQL_DATABASE: parent
-      MYSQL_USER: root
-      MYSQL_PASSWORD:
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: appPass
     ports:
       - "3306:3306"
     volumes:
@@ -21,7 +21,7 @@ services:
     environment:
       PMA_HOST: mysql
       PMA_USER: root
-      PMA_PASSWORD:
+      PMA_PASSWORD: rootPass
     ports:
       - "8080:80"
     depends_on:
